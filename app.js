@@ -74,7 +74,9 @@ app.use(
 function timeAgo(timestamp) {
   // Function code here (same as in your original code)
 }
-
+app.get('/', (req, res) => {
+  res.render('login-register', { error: null });
+});
 app.get('/register', (req, res) => {
   res.render('login-register', { error: null });
 });
